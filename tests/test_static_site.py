@@ -112,6 +112,16 @@ class StaticSiteRegressionTests(unittest.TestCase):
             self.assertTrue(path.is_file())
             self.assertLess(path.stat().st_size, 350 * 1024)
 
+    def test_mobile_presentation_stays_light_and_catalog_stays_visible(self):
+        homepage_styles = (ROOT / "gold.css").read_text(encoding="utf-8")
+        product_styles = (ROOT / "product-gold.css").read_text(encoding="utf-8")
+        self.assertIn("color-scheme: light", homepage_styles)
+        self.assertIn("color-scheme: light", product_styles)
+        self.assertNotIn("prefers-color-scheme: dark", homepage_styles)
+        self.assertNotIn("prefers-color-scheme: dark", product_styles)
+        self.assertIn(".motion-ready #projects[data-reveal]", homepage_styles)
+        self.assertIn('<meta name="theme-color" content="#f0eee8">', HOME)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,6 @@
 /* VibeCurb visual surgery layer. portfolio.css remains the rollback baseline. */
 :root {
+    color-scheme: light;
     --bg: #f0eee8;
     --bg-elevated: #f0eee8;
     --surface: #f0eee8;
@@ -16,22 +17,6 @@
     --radius-md: 3px;
     --max-width: 1360px;
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #11100f;
-        --bg-elevated: #11100f;
-        --surface: #11100f;
-        --surface-soft: #201e1b;
-        --text: #f2eee6;
-        --text-soft: #aaa49a;
-        --line: rgba(242, 238, 230, 0.16);
-        --line-strong: rgba(242, 238, 230, 0.42);
-        --accent: #ff7558;
-        --accent-bright: #ff876d;
-        --accent-soft: #3c211a;
-    }
 }
 
 html {
@@ -863,6 +848,13 @@ main,
     opacity: 1;
     transform: translateY(0);
     transition: opacity 800ms var(--ease-out), transform 800ms var(--ease-out);
+}
+
+/* The catalog can be taller than a mobile viewport by an order of magnitude.
+   Keeping it visible avoids an impossible intersection-ratio reveal gate. */
+.motion-ready #projects[data-reveal] {
+    opacity: 1;
+    transform: none;
 }
 
 @media (min-width: 901px) {

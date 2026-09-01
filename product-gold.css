@@ -1,22 +1,12 @@
 /* Editorial override for product, privacy, and support routes. */
 :root {
+    color-scheme: light;
     --bg: #f0eee8;
     --surface: #e4e0d7;
     --text: #171614;
     --muted: #6e6961;
     --rule: rgba(23, 22, 20, 0.18);
     --accent: #b53520;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #11100f;
-        --surface: #201e1b;
-        --text: #f2eee6;
-        --muted: #aaa49a;
-        --rule: rgba(242, 238, 230, 0.16);
-        --accent: #ff7558;
-    }
 }
 
 body {
