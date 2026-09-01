@@ -1,5 +1,16 @@
 [
   {
+    "name": "DeskBuddies",
+    "description": "Offline native macOS desktop pets that react to your Mac's thermal state",
+    "repositoryUrl": "https://github.com/vinayanand3/DeskBuddies",
+    "homepageUrl": null,
+    "language": "Swift",
+    "topics": [],
+    "stars": 0,
+    "pushedAt": "2026-09-01T01:11:23Z",
+    "updatedAt": "2026-09-01T01:11:46Z"
+  },
+  {
     "name": "vinay-resume-engineering",
     "description": "Flight-themed interactive resume with an aircraft window shade and day/night modes.",
     "repositoryUrl": "https://github.com/vinayanand3/vinay-resume-engineering",
@@ -94,17 +105,6 @@
     "stars": 0,
     "pushedAt": "2026-08-20T21:10:32Z",
     "updatedAt": "2026-08-20T21:13:31Z"
-  },
-  {
-    "name": "DeskBuddies",
-    "description": "Offline native macOS desktop pets that react to your Mac's thermal state",
-    "repositoryUrl": "https://github.com/vinayanand3/DeskBuddies",
-    "homepageUrl": null,
-    "language": "Swift",
-    "topics": [],
-    "stars": 0,
-    "pushedAt": "2026-08-14T00:07:18Z",
-    "updatedAt": "2026-08-14T00:07:21Z"
   },
   {
     "name": "flight-delay-tracker",
