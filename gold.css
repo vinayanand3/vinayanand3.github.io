@@ -865,6 +865,21 @@ main,
     transition: opacity 800ms var(--ease-out), transform 800ms var(--ease-out);
 }
 
+@media (min-width: 901px) {
+    .hero {
+        min-height: min(780px, calc(100svh - 74px));
+        padding: clamp(6rem, 9vw, 9.5rem) 0 3rem;
+    }
+
+    .hero-copy {
+        align-self: start;
+    }
+
+    .hero h1 {
+        font-size: clamp(4.5rem, 8.7vw, 8.6rem);
+    }
+}
+
 @media (max-width: 1000px) {
     .hero-copy {
         grid-column: 1 / span 8;
@@ -900,6 +915,26 @@ main,
         grid-column: 2 / -1;
         grid-row: 3;
         justify-content: flex-start;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+    .hero {
+        display: block;
+        min-height: auto;
+        padding: 7rem 0 5rem;
+    }
+
+    .hero-panel {
+        max-width: none;
+        margin-top: 5rem;
+        padding: 1.5rem 0 0;
+        border-top: 1px solid var(--line);
+        border-left: 0;
+    }
+
+    .panel-value {
+        max-width: 28ch;
     }
 }
 
