@@ -128,6 +128,9 @@ h1 span { color: var(--text-soft); }
 .card-kicker { margin: 0 0 0.5rem; color: var(--text-soft); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 .product-body h3 { margin-bottom: 0.6rem; font-size: 1.9rem; }
 .product-body > p:not(.card-kicker) { min-height: 3.2em; margin: 0 0 1.5rem; color: var(--text-soft); }
+.product-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem 1rem; }
+.store-link { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 44px; padding: 0.6rem 0.9rem; border-radius: 11px; background: var(--text); color: var(--bg); font-weight: 700; text-decoration: none; transition: transform 180ms ease, background 180ms ease; }
+.store-link:hover { transform: translateY(-2px); background: var(--accent); }
 .text-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); font-weight: 700; text-decoration: none; }
 .text-link:hover { text-decoration: underline; text-underline-offset: 4px; }
 
