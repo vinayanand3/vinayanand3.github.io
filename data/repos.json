@@ -1,5 +1,16 @@
 [
   {
+    "name": "vinay-resume-engineering",
+    "description": "Flight-themed interactive resume with an aircraft window shade and day/night modes.",
+    "repositoryUrl": "https://github.com/vinayanand3/vinay-resume-engineering",
+    "homepageUrl": "https://vinayanand3.github.io/vinay-resume-engineering/",
+    "language": "HTML",
+    "topics": [],
+    "stars": 0,
+    "pushedAt": "2026-09-01T00:49:29Z",
+    "updatedAt": "2026-09-01T00:55:30Z"
+  },
+  {
     "name": "headroom",
     "description": "How much AI quota you have left, in your macOS menu bar",
     "repositoryUrl": "https://github.com/vinayanand3/headroom",
