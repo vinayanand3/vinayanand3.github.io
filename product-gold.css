@@ -1,0 +1,330 @@
+/* Editorial override for product, privacy, and support routes. */
+:root {
+    --bg: #f0eee8;
+    --surface: #e4e0d7;
+    --text: #171614;
+    --muted: #6e6961;
+    --rule: rgba(23, 22, 20, 0.18);
+    --accent: #b53520;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #11100f;
+        --surface: #201e1b;
+        --text: #f2eee6;
+        --muted: #aaa49a;
+        --rule: rgba(242, 238, 230, 0.16);
+        --accent: #ff7558;
+    }
+}
+
+body {
+    padding: clamp(2rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem) clamp(5rem, 10vw, 9rem);
+    font-family: "Instrument Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.utility-skip {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 20;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--text);
+    background: var(--text);
+    color: var(--bg);
+    transform: translateY(-180%);
+    transition: transform 160ms ease;
+}
+
+.utility-skip:focus {
+    transform: translateY(0);
+}
+
+.utility-header,
+.utility-footer {
+    width: min(100%, 74rem);
+    margin-inline: auto;
+}
+
+.utility-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    min-height: 74px;
+    border-bottom: 1px solid var(--rule);
+}
+
+.utility-wordmark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    min-height: 44px;
+    color: var(--text);
+    font-size: 0.94rem;
+    text-decoration: none;
+}
+
+.utility-wordmark > span {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid color-mix(in srgb, var(--text) 42%, transparent);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.7rem;
+}
+
+.utility-wordmark strong {
+    font-weight: 600;
+}
+
+.utility-header nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.utility-header nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.utility-header nav a:hover {
+    color: var(--accent);
+}
+
+main {
+    max-width: 50rem;
+    padding-top: clamp(4rem, 9vw, 8rem);
+}
+
+h1,
+h2 {
+    font-family: "Instrument Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-stretch: condensed;
+    letter-spacing: -0.055em;
+}
+
+h1 {
+    max-width: 12ch;
+    margin-bottom: 0.75rem;
+    font-size: clamp(3.6rem, 10vw, 7.5rem);
+    font-weight: 560;
+    line-height: 0.9;
+}
+
+h2 {
+    margin-top: 4rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--rule);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 540;
+}
+
+p,
+li {
+    max-width: 68ch;
+}
+
+a {
+    transition: color 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 5px;
+}
+
+.back,
+.updated {
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.back {
+    margin-bottom: clamp(3rem, 8vw, 6rem);
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.back:hover {
+    color: var(--accent);
+}
+
+.tagline {
+    max-width: 40ch;
+    margin-bottom: 1.75rem;
+    font-size: clamp(1.25rem, 2.6vw, 1.7rem);
+    line-height: 1.4;
+}
+
+.app-store-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 50px;
+    padding: 0.75rem 1rem;
+    background: var(--text);
+    color: var(--bg);
+    font-size: 0.9rem;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.app-store-action:hover {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.app-store-action-final {
+    margin-top: 3rem;
+}
+
+.product-media {
+    position: relative;
+    width: min(100%, 68rem);
+    margin: clamp(3rem, 8vw, 6rem) 0;
+    padding: clamp(1rem, 4vw, 3rem);
+    background: var(--text);
+}
+
+.product-media > img:first-child {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.product-media-icon {
+    position: absolute;
+    right: clamp(1.5rem, 5vw, 3.5rem);
+    bottom: clamp(1.5rem, 5vw, 3.5rem);
+    width: clamp(70px, 13vw, 112px);
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20%;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    position: relative;
+    padding: 1.2rem 0;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--rule);
+    border-radius: 0;
+    background: transparent;
+}
+
+.card:last-of-type {
+    border-bottom: 1px solid var(--rule);
+}
+
+.card:hover {
+    border-color: var(--text);
+    color: var(--accent);
+}
+
+.card strong {
+    font-size: 1.15rem;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+}
+
+.utility-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: clamp(5rem, 10vw, 9rem);
+    padding: 1.5rem 0 0;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.utility-footer p {
+    margin: 0;
+    color: inherit;
+}
+
+.utility-footer a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.utility-footer a:hover {
+    color: var(--accent);
+}
+
+@media (min-width: 960px) {
+    body:has(.product-media) main {
+        max-width: 74rem;
+    }
+
+    body:has(.product-media) main > p:not(.tagline),
+    body:has(.product-media) main > h2,
+    body:has(.product-media) main > .card,
+    body:has(.product-media) main > .app-store-action-final {
+        margin-left: 33.333%;
+    }
+}
+
+@media (max-width: 620px) {
+    .utility-header {
+        gap: 1rem;
+    }
+
+    .utility-wordmark strong {
+        display: none;
+    }
+
+    .utility-header nav {
+        gap: 1rem;
+    }
+
+    .utility-footer {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .utility-header nav a:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

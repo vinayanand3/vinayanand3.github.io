@@ -3,29 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Apps, experiments, and open-source projects by software engineer Vinay Anand Bhaskarla.">
-    <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#f5f7fb" media="(prefers-color-scheme: light)">
+    <meta name="description" content="Released apps, AI products, and open-source software by Vinay Anand Bhaskarla.">
+    <meta name="theme-color" content="#11100f" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f0eee8" media="(prefers-color-scheme: light)">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Vinay Bhaskarla | Software maker">
-    <meta property="og:description" content="A growing collection of useful software, playful experiments, and open-source projects.">
+    <meta property="og:title" content="Vinay Bhaskarla | Software and AI engineer">
+    <meta property="og:description" content="Software that leaves the prototype stage. Native apps, AI products, and open-source tools.">
     <meta property="og:url" content="https://vinayanand3.github.io/">
     <meta property="og:image" content="https://vinayanand3.github.io/og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Useful software, built with curiosity. Vinay Bhaskarla.">
+    <meta property="og:image:alt" content="Software that leaves the prototype stage. Vinay Bhaskarla.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vinay Bhaskarla | Software maker">
-    <meta name="twitter:description" content="A growing collection of useful software, playful experiments, and open-source projects.">
+    <meta name="twitter:title" content="Vinay Bhaskarla | Software and AI engineer">
+    <meta name="twitter:description" content="Software that leaves the prototype stage. Native apps, AI products, and open-source tools.">
     <meta name="twitter:image" content="https://vinayanand3.github.io/og.png">
-    <meta name="twitter:image:alt" content="Useful software, built with curiosity. Vinay Bhaskarla.">
-    <title>Vinay Bhaskarla | Software maker</title>
+    <meta name="twitter:image:alt" content="Software that leaves the prototype stage. Vinay Bhaskarla.">
+    <title>Vinay Bhaskarla | Software and AI engineer</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Instrument+Sans:wdth,wght@75..100,400..700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/portfolio.css">
+    <link rel="stylesheet" href="/gold.css">
     <script src="/portfolio.js" defer></script>
+    <script src="/motion.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -44,36 +46,35 @@
     </header>
 
     <main id="main-content">
-        <section class="hero" aria-labelledby="hero-title">
+        <section class="hero" aria-labelledby="hero-title" data-reveal>
             <div class="hero-copy">
-                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software engineer and product builder</p>
-                <h1 id="hero-title">Useful software,<br><span>built with curiosity.</span></h1>
-                <p class="hero-intro">I build interactive web apps, native Mac tools, and AI-driven products focused on usability, visualization, and real-world problems.</p>
+                <p class="eyebrow">Vinay Bhaskarla <span aria-hidden="true">&#183;</span> Software and AI engineer</p>
+                <h1 id="hero-title">Software that leaves the <span>prototype stage.</span></h1>
+                <p class="hero-intro">I design and ship native Apple apps, AI products, and open-source tools that turn ambitious ideas into useful software.</p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">&#8595;</span></a>
-                    <a class="button button-secondary" href="https://www.linkedin.com/in/vinayanand2" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">&#8599;</span></a>
+                    <a class="button button-primary" href="#featured">See the apps <span aria-hidden="true">&#8595;</span></a>
+                    <a class="button button-secondary" href="#projects">Browse open source <span aria-hidden="true">&#8595;</span></a>
                 </div>
             </div>
             <aside class="hero-panel" aria-label="Portfolio overview">
-                <div class="signal" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
-                <p class="panel-label">Current focus</p>
-                <p class="panel-value">Making complex tools feel simple.</p>
+                <p class="panel-label">Released software</p>
+                <p class="panel-value">Products people can download and code people can inspect.</p>
                 <dl class="hero-stats">
-                    <div><dt>Original projects</dt><dd id="project-stat">47</dd></div>
-                    <div><dt>Core languages</dt><dd id="language-stat">8</dd></div>
-                    <div><dt>Based in</dt><dd>Atlanta</dd></div>
+                    <div><dt>Public projects</dt><dd id="project-stat">48</dd></div>
+                    <div><dt>Languages</dt><dd id="language-stat">8</dd></div>
+                    <div><dt>App Store releases</dt><dd>04</dd></div>
                 </dl>
             </aside>
         </section>
 
-        <section class="section" id="featured" aria-labelledby="featured-title">
+        <section class="section" id="featured" aria-labelledby="featured-title" data-reveal>
             <div class="section-heading">
-                <div><p class="eyebrow">Featured apps</p><h2 id="featured-title">Apps for Mac and iPhone.</h2></div>
-                <p>Focused products that turn thoughtful ideas into useful, memorable experiences.</p>
+                <div><p class="eyebrow">Released software <span>01</span></p><h2 id="featured-title">Four products.<br>Available now.</h2></div>
+                <p>Native utilities and voice experiences built all the way through to release.</p>
             </div>
             <div class="product-grid">
                 <article class="product-card product-card-shade">
-                    <div class="product-visual" aria-hidden="true"><span class="product-index">01</span><span class="visual-word">SHADE</span></div>
+                    <div class="product-visual" aria-hidden="true"><span class="product-index">01 / macOS</span><img class="product-screen" src="/assets/apps/shadedrop-screen.webp" alt="" width="800" height="500" loading="lazy" decoding="async"><img class="product-icon" src="/assets/apps/shadedrop-icon.webp" alt="" width="512" height="512" loading="lazy" decoding="async"><span class="visual-word">SHADE</span></div>
                     <div class="product-body">
                         <p class="card-kicker">macOS privacy utility</p><h3>ShadeDrop</h3>
                         <p>Pull a cord and a beautifully rendered privacy curtain falls across every connected display.</p>
@@ -84,7 +85,7 @@
                     </div>
                 </article>
                 <article class="product-card product-card-curtain">
-                    <div class="product-visual" aria-hidden="true"><span class="product-index">02</span><span class="visual-word">MARK</span></div>
+                    <div class="product-visual" aria-hidden="true"><span class="product-index">02 / macOS</span><img class="product-screen" src="/assets/apps/curtainshot-screen.webp" alt="" width="800" height="500" loading="lazy" decoding="async"><img class="product-icon" src="/assets/apps/curtainshot-icon.webp" alt="" width="512" height="512" loading="lazy" decoding="async"><span class="visual-word">MARK</span></div>
                     <div class="product-body">
                         <p class="card-kicker">macOS capture utility</p><h3>CurtainShot</h3>
                         <p>Capture your screen, mark it up on a pull-down curtain, then lift the curtain to save.</p>
@@ -95,7 +96,7 @@
                     </div>
                 </article>
                 <article class="product-card product-card-vaani">
-                    <div class="product-visual" aria-hidden="true"><span class="product-index">03</span><span class="visual-word">VAANI</span></div>
+                    <div class="product-visual product-visual-phone" aria-hidden="true"><span class="product-index">03 / iPhone</span><img class="product-screen" src="/assets/apps/ramayana-vaani-screen.webp" alt="" width="222" height="480" loading="lazy" decoding="async"><img class="product-icon" src="/assets/apps/ramayana-vaani-icon.webp" alt="" width="512" height="512" loading="lazy" decoding="async"><span class="visual-word">VAANI</span></div>
                     <div class="product-body">
                         <p class="card-kicker">18+ iPhone storytelling app</p><h3>Ramayana Vaani</h3>
                         <p>Have short, source-aware AI voice conversations inspired by characters and stories from the Ramayana.</p>
@@ -105,7 +106,7 @@
                     </div>
                 </article>
                 <article class="product-card product-card-hero">
-                    <div class="product-visual" aria-hidden="true"><span class="product-index">04</span><span class="visual-word">HERO</span></div>
+                    <div class="product-visual product-visual-phone" aria-hidden="true"><span class="product-index">04 / iPhone</span><img class="product-screen" src="/assets/apps/call-a-hero-screen.webp" alt="" width="221" height="480" loading="lazy" decoding="async"><img class="product-icon" src="/assets/apps/call-a-hero-icon.webp" alt="" width="512" height="512" loading="lazy" decoding="async"><span class="visual-word">HERO</span></div>
                     <div class="product-body">
                         <p class="card-kicker">18+ iPhone voice app</p><h3>Call a Hero</h3>
                         <p>Talk with original fictional heroes through live AI voice, create custom heroes, and keep transcripts locally.</p>
@@ -117,17 +118,17 @@
             </div>
         </section>
 
-        <section class="section latest-section" aria-labelledby="latest-title">
+        <section class="section latest-section" aria-labelledby="latest-title" data-reveal>
             <div class="section-heading compact">
-                <div><p class="eyebrow">Fresh from GitHub</p><h2 id="latest-title">Latest builds.</h2></div>
-                <p>My six most recently pushed original projects.</p>
+                <div><p class="eyebrow">Recent activity <span>02</span></p><h2 id="latest-title">Latest builds.</h2></div>
+                <p>The six most recently pushed original projects, refreshed automatically from GitHub.</p>
             </div>
             <div class="project-grid project-grid-featured" id="latest-projects" aria-live="polite"><p class="loading-state">Loading the latest projects...</p></div>
         </section>
 
-        <section class="section catalog-section" id="projects" aria-labelledby="projects-title">
+        <section class="section catalog-section" id="projects" aria-labelledby="projects-title" data-reveal>
             <div class="section-heading">
-                <div><p class="eyebrow">Open-source catalog</p><h2 id="projects-title">Explore every project.</h2></div>
+                <div><p class="eyebrow">Open-source index <span>03</span></p><h2 id="projects-title">Every public project.</h2></div>
                 <p>Search the complete collection or filter it by language and live availability.</p>
             </div>
             <div class="project-controls" aria-label="Project filters">
@@ -146,10 +147,10 @@
             <div class="project-grid" id="project-grid" aria-live="polite"></div>
         </section>
 
-        <section class="about-section" id="about" aria-labelledby="about-title">
-            <div><p class="eyebrow">About</p><h2 id="about-title">Software is how I turn questions into things people can use.</h2></div>
+        <section class="about-section" id="about" aria-labelledby="about-title" data-reveal>
+            <div><p class="eyebrow">About <span>04</span></p><h2 id="about-title">I turn technical questions into software people can use.</h2></div>
             <div class="about-copy">
-                <p>I am a software engineer completing an MS in Computer Science with a focus on artificial intelligence at Georgia Tech. My work spans TypeScript, React, Python, data visualization, applied AI, and native macOS development.</p>
+                <p>I am a software engineer completing an MS in Computer Science at Georgia Tech, focused on artificial intelligence. My work spans native Apple platforms, TypeScript, React, Python, data visualization, and applied AI.</p>
                 <div class="about-links">
                     <a href="https://github.com/vinayanand3" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
                     <a href="https://www.linkedin.com/in/vinayanand2" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">&#8599;</span></a>
