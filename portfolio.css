@@ -121,6 +121,8 @@ h1 span { color: var(--text-soft); }
 .product-visual { position: relative; display: flex; align-items: end; justify-content: center; min-height: 280px; padding: 1.5rem; overflow: hidden; color: white; }
 .product-card-shade .product-visual { background: linear-gradient(145deg, #101a2d 0%, #193e46 58%, #31c9ad 160%); }
 .product-card-curtain .product-visual { background: linear-gradient(145deg, #3a1d21 0%, #943e42 60%, #ff9b71 150%); }
+.product-card-vaani .product-visual { background: linear-gradient(145deg, #24173f 0%, #5f3c86 55%, #f29f4b 150%); }
+.product-card-hero .product-visual { background: linear-gradient(145deg, #0d2845 0%, #255c91 58%, #68c9f2 150%); }
 .product-visual::before { content: ""; position: absolute; inset: 1.4rem; border: 1px solid rgba(255,255,255,0.26); border-radius: 20px; }
 .product-index { position: absolute; top: 2.5rem; left: 2.5rem; color: rgba(255,255,255,0.7); font-size: 0.8rem; font-weight: 700; }
 .visual-word { font-family: "Manrope", sans-serif; font-size: clamp(3.5rem, 8vw, 7.2rem); font-weight: 800; letter-spacing: -0.09em; line-height: 0.7; opacity: 0.9; transform: translateY(0.1em); }
