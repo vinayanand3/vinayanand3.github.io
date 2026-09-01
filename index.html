@@ -1,29 +1,139 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vinay Bhaskarla — Apps</title>
-<link rel="stylesheet" href="/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Apps, experiments, and open-source projects by software engineer Vinay Anand Bhaskarla.">
+    <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f5f7fb" media="(prefers-color-scheme: light)">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vinay Bhaskarla | Software maker">
+    <meta property="og:description" content="A growing collection of useful software, playful experiments, and open-source projects.">
+    <meta property="og:url" content="https://vinayanand3.github.io/">
+    <meta property="og:image" content="https://vinayanand3.github.io/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Useful software, built with curiosity. Vinay Bhaskarla.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vinay Bhaskarla | Software maker">
+    <meta name="twitter:description" content="A growing collection of useful software, playful experiments, and open-source projects.">
+    <meta name="twitter:image" content="https://vinayanand3.github.io/og.png">
+    <meta name="twitter:image:alt" content="Useful software, built with curiosity. Vinay Bhaskarla.">
+    <title>Vinay Bhaskarla | Software maker</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/portfolio.css">
+    <script src="/portfolio.js" defer></script>
 </head>
 <body>
-<main>
-    <h1>Apps</h1>
-    <p class="tagline">Native macOS and iOS apps by Vinay Bhaskarla.</p>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <a class="card" href="/shadedrop/">
-        <strong>ShadeDrop</strong>
-        <span>A smart curtain for your Mac.</span>
-    </a>
+    <header class="site-header">
+        <a class="wordmark" href="/" aria-label="Vinay Bhaskarla, home">
+            <span class="wordmark-mark" aria-hidden="true">VB</span>
+            <span>Vinay Bhaskarla</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#featured">Apps</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </nav>
+        <a class="header-link" href="https://github.com/vinayanand3" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+    </header>
 
-    <a class="card" href="/curtainshot/">
-        <strong>CurtainShot</strong>
-        <span>Pull a curtain over your screen, mark it up, save it.</span>
-    </a>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software engineer and product builder</p>
+                <h1 id="hero-title">Useful software,<br><span>built with curiosity.</span></h1>
+                <p class="hero-intro">I build interactive web apps, native Mac tools, and AI-driven products focused on usability, visualization, and real-world problems.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">&#8595;</span></a>
+                    <a class="button button-secondary" href="https://www.linkedin.com/in/vinayanand2" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">&#8599;</span></a>
+                </div>
+            </div>
+            <aside class="hero-panel" aria-label="Portfolio overview">
+                <div class="signal" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <p class="panel-label">Current focus</p>
+                <p class="panel-value">Making complex tools feel simple.</p>
+                <dl class="hero-stats">
+                    <div><dt>Original projects</dt><dd id="project-stat">47</dd></div>
+                    <div><dt>Core languages</dt><dd id="language-stat">8</dd></div>
+                    <div><dt>Based in</dt><dd>Atlanta</dd></div>
+                </dl>
+            </aside>
+        </section>
 
-    <footer>
-        Privacy policies and support pages for each app are linked from its page.
-    </footer>
-</main>
+        <section class="section" id="featured" aria-labelledby="featured-title">
+            <div class="section-heading">
+                <div><p class="eyebrow">Featured apps</p><h2 id="featured-title">Tools made for the Mac.</h2></div>
+                <p>Small, focused utilities that turn everyday gestures into useful workflows.</p>
+            </div>
+            <div class="product-grid">
+                <article class="product-card product-card-shade">
+                    <div class="product-visual" aria-hidden="true"><span class="product-index">01</span><span class="visual-word">SHADE</span></div>
+                    <div class="product-body">
+                        <p class="card-kicker">macOS privacy utility</p><h3>ShadeDrop</h3>
+                        <p>Pull a cord and a beautifully rendered privacy curtain falls across every connected display.</p>
+                        <a class="text-link" href="/shadedrop/">Explore ShadeDrop <span aria-hidden="true">&#8594;</span></a>
+                    </div>
+                </article>
+                <article class="product-card product-card-curtain">
+                    <div class="product-visual" aria-hidden="true"><span class="product-index">02</span><span class="visual-word">MARK</span></div>
+                    <div class="product-body">
+                        <p class="card-kicker">macOS capture utility</p><h3>CurtainShot</h3>
+                        <p>Capture your screen, mark it up on a pull-down curtain, then lift the curtain to save.</p>
+                        <a class="text-link" href="/curtainshot/">Explore CurtainShot <span aria-hidden="true">&#8594;</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section latest-section" aria-labelledby="latest-title">
+            <div class="section-heading compact">
+                <div><p class="eyebrow">Fresh from GitHub</p><h2 id="latest-title">Latest builds.</h2></div>
+                <p>My six most recently pushed original projects.</p>
+            </div>
+            <div class="project-grid project-grid-featured" id="latest-projects" aria-live="polite"><p class="loading-state">Loading the latest projects...</p></div>
+        </section>
+
+        <section class="section catalog-section" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <div><p class="eyebrow">Open-source catalog</p><h2 id="projects-title">Explore every project.</h2></div>
+                <p>Search the complete collection or filter it by language and live availability.</p>
+            </div>
+            <div class="project-controls" aria-label="Project filters">
+                <label class="search-field">
+                    <span class="sr-only">Search projects</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+                    <input id="project-search" type="search" placeholder="Search by name, description, or topic" autocomplete="off">
+                </label>
+                <button class="filter-toggle" id="demo-filter" type="button" aria-pressed="false"><span class="toggle-indicator" aria-hidden="true"></span> Live demos only</button>
+            </div>
+            <div class="language-filters" id="language-filters" aria-label="Filter by programming language"></div>
+            <div class="results-bar">
+                <p id="results-count" aria-live="polite">Loading projects...</p>
+                <button class="clear-filters" id="clear-filters" type="button" hidden>Clear filters</button>
+            </div>
+            <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <div><p class="eyebrow">About</p><h2 id="about-title">Software is how I turn questions into things people can use.</h2></div>
+            <div class="about-copy">
+                <p>I am a software engineer completing an MS in Computer Science with a focus on artificial intelligence at Georgia Tech. My work spans TypeScript, React, Python, data visualization, applied AI, and native macOS development.</p>
+                <div class="about-links">
+                    <a href="https://github.com/vinayanand3" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+                    <a href="https://www.linkedin.com/in/vinayanand2" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">&#8599;</span></a>
+                    <a href="https://devpost.com/vinayanand2" target="_blank" rel="noreferrer">Devpost <span aria-hidden="true">&#8599;</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><p>Designed and built by Vinay Bhaskarla.</p><a href="#main-content">Back to top <span aria-hidden="true">&#8593;</span></a></footer>
+    <noscript><div class="noscript-message">JavaScript is needed to browse the repository catalog. You can view every project directly on <a href="https://github.com/vinayanand3?tab=repositories">GitHub</a>.</div></noscript>
 </body>
 </html>
