@@ -1,5 +1,35 @@
 [
   {
+    "name": "jeep-threejs-3d",
+    "description": "Interactive 3D Three.js Vehicle Studio & Configurator (Jeep Wrangler, Rivian R1T, Rivian R1S) with PBR shaders and Exploded View",
+    "repositoryUrl": "https://github.com/vinayanand3/jeep-threejs-3d",
+    "homepageUrl": null,
+    "language": "JavaScript",
+    "topics": [],
+    "stars": 0,
+    "pushedAt": "2026-09-01T21:46:27Z",
+    "updatedAt": "2026-09-01T21:46:31Z"
+  },
+  {
+    "name": "headroom",
+    "description": "How much AI quota you have left, in your macOS menu bar",
+    "repositoryUrl": "https://github.com/vinayanand3/headroom",
+    "homepageUrl": null,
+    "language": "Swift",
+    "topics": [
+      "appkit",
+      "claude-code",
+      "codex",
+      "developer-tools",
+      "macos",
+      "menubar",
+      "swift"
+    ],
+    "stars": 0,
+    "pushedAt": "2026-09-01T12:43:07Z",
+    "updatedAt": "2026-09-01T12:49:58Z"
+  },
+  {
     "name": "DeskBuddies",
     "description": "Offline native macOS desktop pets that react to your Mac's thermal state",
     "repositoryUrl": "https://github.com/vinayanand3/DeskBuddies",
@@ -20,25 +50,6 @@
     "stars": 0,
     "pushedAt": "2026-09-01T00:49:29Z",
     "updatedAt": "2026-09-01T00:55:30Z"
-  },
-  {
-    "name": "headroom",
-    "description": "How much AI quota you have left, in your macOS menu bar",
-    "repositoryUrl": "https://github.com/vinayanand3/headroom",
-    "homepageUrl": null,
-    "language": "Swift",
-    "topics": [
-      "appkit",
-      "claude-code",
-      "codex",
-      "developer-tools",
-      "macos",
-      "menubar",
-      "swift"
-    ],
-    "stars": 0,
-    "pushedAt": "2026-08-30T17:01:38Z",
-    "updatedAt": "2026-08-30T16:55:33Z"
   },
   {
     "name": "space-tech-explorers-curriculum",
