@@ -1,5 +1,16 @@
 [
   {
+    "name": "candlestick-alerts-app",
+    "description": "Web-based candlestick and macro trading alerts dashboard",
+    "repositoryUrl": "https://github.com/vinayanand3/candlestick-alerts-app",
+    "homepageUrl": null,
+    "language": "Python",
+    "topics": [],
+    "stars": 0,
+    "pushedAt": "2026-09-05T03:14:44Z",
+    "updatedAt": "2026-09-05T03:15:02Z"
+  },
+  {
     "name": "jeep-threejs-3d",
     "description": "Interactive 3D Three.js Vehicle Studio & Configurator (Jeep Wrangler, Rivian R1T, Rivian R1S) with PBR shaders and Exploded View",
     "repositoryUrl": "https://github.com/vinayanand3/jeep-threejs-3d",
